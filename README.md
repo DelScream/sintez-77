@@ -43,8 +43,13 @@ npm run preview
 
 Сайт рассчитан на адрес `https://delscream.github.io/sintez-77/`.
 
-1. В репозитории: **Settings → Pages → Source → GitHub Actions**.
-2. После пуша в `main` workflow соберёт проект и опубликует папку `dist`.
+После пуша в `main` workflow собирает проект и выкладывает `dist` в ветку `gh-pages`.
+
+Один раз включи публикацию:
+
+1. **Settings → Pages**
+2. **Source:** Deploy from a branch
+3. **Branch:** `gh-pages` / `/ (root)` → **Save**
 
 ## Лицензия
 
