@@ -1,0 +1,89 @@
+@media (max-width: 1280px) {
+  .hud { transform: scale(0.88); transform-origin: bottom right; }
+  .hero__spec { grid-template-columns: repeat(3, auto); }
+  .nav {
+    gap: 14px;
+    .nav__link { font-size: 11px; letter-spacing: 0.1em; }
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav { display: none; }
+  .burger { display: grid; }
+  .header:has(.nav) .header-actions > .btn { display: none; }
+  .hero__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "top" "copy" "object";
+    min-height: auto;
+  }
+  .hero__city { mask-image: none; opacity: 0.22; }
+  .hero__copy { max-width: 100%; }
+  .hud { position: relative; right: auto; bottom: auto; width: 100%; max-width: 280px; margin: 12px auto 0; }
+  .v-text, .scroll-meter { display: none; }
+  .units__grid,
+  .uses__grid,
+  .reviews__grid,
+  .config__grid,
+  .hw__stage,
+  .gpu-block__grid,
+  .test__grid,
+  .footer__cols,
+  .why__schema,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+  .timeline__line { display: none; }
+  .timeline article button {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .why__schema {
+    grid-template-areas: "n1" "n2" "core" "n3" "n4";
+  }
+  .unit-card--featured { transform: none; }
+  .hero { min-height: auto; }
+  .section h2 { font-size: clamp(32px, 8vw, 64px); }
+}
+
+@media (max-width: 768px) {
+  :root { --header-h: 76px; }
+  .header-actions .icon-btn:not([data-open="cart"]) { display: none; }
+  .logo__mark { font-size: 18px; }
+  .units__grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+  }
+  .unit-card {
+    min-width: min(86vw, 360px);
+    scroll-snap-align: start;
+  }
+  .config__board { padding: 18px; }
+  .chips { display: grid; grid-template-columns: 1fr 1fr; }
+  .games__list li { flex-direction: column; align-items: flex-start; }
+  .games__list strong { font-size: clamp(28px, 10vw, 48px); }
+  .fps__row { grid-template-columns: 1fr; }
+  .callout span { font-size: 10px; }
+  .credit-modal { width: 100%; }
+  body { cursor: auto; }
+  .cursor, .cursor-dot { display: none; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: clamp(28px, 12vw, 42px); }
+  .btn { width: 100%; }
+  .hero__cta { width: 100%; }
+  .callout span { display: none; }
+  .section { padding: 64px 0; }
+  .chips { grid-template-columns: 1fr; }
+  .hero__spec { grid-template-columns: 1fr 1fr; }
+  .test__ready { text-align: left; }
+  .test__ready b { font-size: clamp(64px, 22vw, 96px); }
+  .footer__cols { gap: 28px; }
+}
+
+@media (hover: none) {
+  .unit-card__cta { opacity: 1; transform: none; }
+}

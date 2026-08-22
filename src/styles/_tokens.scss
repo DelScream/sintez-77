@@ -1,0 +1,40 @@
+:root {
+  --black: #070707;
+  --dark: #0d0f10;
+  --panel: #121517;
+  --yellow: #f5e600;
+  --yellow-hover: #fff200;
+  --red: #ff304f;
+  --blue: #00b7ff;
+  --cyan: #00e5ff;
+  --white: #f4f4f4;
+  --gray: #858585;
+  --dark-gray: #292d30;
+
+  --font-display: "Unbounded", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-tech: "JetBrains Mono", ui-monospace, monospace;
+
+  --container: 1520px;
+  --pad: clamp(20px, 4vw, 64px);
+  --header-h: 84px;
+  --radius: 2px;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --line: 1px solid rgba(255, 255, 255, 0.08);
+  --glow-y: 0 0 40px rgba(245, 230, 0, 0.28);
+  --glow-b: 0 0 40px rgba(0, 183, 255, 0.22);
+  --glow-r: 0 0 40px rgba(255, 48, 79, 0.22);
+}
+
+body.is-deep {
+  --yellow: #ff304f;
+  --yellow-hover: #ff6b81;
+  --cyan: #00b7ff;
+}
+
+$bp-xl: 1440px;
+$bp-lg: 1280px;
+$bp-md: 1024px;
+$bp-tab: 768px;
+$bp-mob: 480px;
