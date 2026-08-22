@@ -381,18 +381,3 @@
   font-family: var(--font-tech);
   &.is-visible { display: block; }
 }
-
-.glitch-flash {
-  position: fixed;
-  inset: 0;
-  z-index: 120;
-  pointer-events: none;
-  display: grid;
-  place-items: center;
-  font-family: var(--font-tech);
-  font-size: 13px;
-  letter-spacing: 0.3em;
-  color: var(--red);
-  background: rgba(0, 0, 0, 0.35);
-  opacity: 0;
-}

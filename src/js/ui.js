@@ -229,16 +229,6 @@ export function initUI() {
       if (clicks >= 5) {
         e.preventDefault();
         document.body.classList.toggle("is-deep");
-        const flash = document.querySelector(".glitch-flash");
-        if (flash) {
-          flash.textContent = document.body.classList.contains("is-deep")
-            ? "// DEEP ACCESS  NIGHT MODE: UNLOCKED"
-            : "SYSTEM MESSAGE: YOU ARE ALREADY LATE.";
-          flash.style.opacity = "1";
-          window.setTimeout(() => {
-            flash.style.opacity = "0";
-          }, 900);
-        }
         clicks = 0;
       }
     }

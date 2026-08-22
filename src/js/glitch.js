@@ -3,7 +3,6 @@ export function initGlitch(reduced) {
 
   const title = document.querySelector(".hero-title");
   const image = document.querySelector("[data-glitch-img]");
-  const flash = document.querySelector(".glitch-flash");
 
   const run = () => {
     title?.classList.add("is-glitching");
@@ -12,17 +11,6 @@ export function initGlitch(reduced) {
       title?.classList.remove("is-glitching");
       image?.classList.remove("is-glitching");
     }, 220);
-
-    if (flash && Math.random() > 0.82) {
-      flash.textContent = "CONNECTION LOST";
-      flash.style.opacity = "1";
-      window.setTimeout(() => {
-        flash.textContent = "CONNECTION RESTORED";
-      }, 120);
-      window.setTimeout(() => {
-        flash.style.opacity = "0";
-      }, 280);
-    }
   };
 
   const loop = () => {
